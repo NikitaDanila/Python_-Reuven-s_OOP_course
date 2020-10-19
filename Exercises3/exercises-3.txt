@@ -1,0 +1,16 @@
+(1) Modify the Bowl class, such that adding a new scoop to the bowl
+    will only work if you have fewer than 3 scoops.  In other words: max 3
+    scoops per bowl.
+
+    Adding a new scoop to a bowl that is already full will be silently
+    ignored.
+
+(2) Create a Loan class. Each time someone creates a new Loan, it's
+    for a certain amount of money.  That money is taken from the
+    bank's available assets.
+
+    l1 = Loan(500)
+    l2 = Loan(200)
+    l3 = Loan(700)  # raises an exception -- ValueError to indicate no money
+    l1.repay(500)
+    l3 = Loan(700)  # now it'll work, because the bank has sufficient funds

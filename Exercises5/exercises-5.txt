@@ -1,0 +1,43 @@
+(1) Make it possible to run len() on our Bowl/BigBowl objects.  This
+    will report the number of scoops in a bowl.
+
+    b = Bowl()
+    b.add_scoops(s1, s2, s3)
+    len(b)  # return 3
+
+(2) Make it possible to "print" our Scoop and Bowl.  If I say
+
+    print(s1)
+
+    it'll print
+
+    Scoop of chocolate
+
+    mylist = [s1, s2, s3]
+
+    print(mylist)
+
+     [Scoop of chocolate, Scoop of vanilla, Scoop of coffee]
+
+    print(b)
+
+    Bowl with:
+	1) Scoop of chocolate
+	2) Scoop of vanilla
+	2) Scoop of coffee
+
+(3) Make len() and print() work on the Shopping Cart.  If I say
+    len(sc), it'll return the number of items in the cart.
+
+    print(sc)
+
+    It'll show each item in the cart -- name, per-unit price,
+    quantity, and total price for that item.  *PLUS* it'll show the
+    total price of all items
+
+    item1    2    $1    $2
+    item2    6    $3    $18
+    -----------------------
+    Total               $20
+    
+

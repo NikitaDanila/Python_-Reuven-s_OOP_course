@@ -1,0 +1,48 @@
+wolf = Wolf('black')            # species, color, # legs
+sheep1 = Sheep('white')
+sheep2 = Sheep('white')         
+snake = Snake('brown')
+parrot = Parrot('black')
+
+print(wolf)    #  black wolf, 4 legs
+print(sheep1)    #  white sheep, 4 legs
+print(sheep2)    #  white sheep, 4 legs
+print(snake)    #   brown snake, 0 legs
+print(parrot)    #  black parrot, 2 legs
+
+c1 = Cage(1)   # ID numbers
+c1.add_animals(wolf, sheep1, sheep2)
+print(c1)
+
+#    Cage 1:
+#	1 black wolf, 4 legs
+#	2 white sheep, 4 legs
+#	3 white sheep, 4 legs
+
+c2 = Cage(2)
+c2.add_animals(snake, parrot)
+print(c2)
+
+#    Cage 2:
+#	1 brown snake, 0 legs
+#	2 black parrot, 2 legs
+
+z = Zoo()
+z.add_cages(c1, c2)
+print(z)
+
+#     Cage 1:
+# 	1 black wolf, 4 legs
+# 	2 white sheep, 4 legs
+# 	3 white sheep, 4 legs
+#     Cage 2:
+# 	1 brown snake, 0 legs
+# 	2 black parrot, 2 legs
+
+print(z.animals_by_color('black'))
+# 	1 black wolf, 4 legs
+# 	2 black parrot, 2 legs
+
+print(z.number_of_legs())
+#     14
+    S

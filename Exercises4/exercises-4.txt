@@ -1,0 +1,13 @@
+(1) Take our existing Person class, and add a subclass, called
+    VerbosePerson.  This class works the same way as Person, except that
+    the "greet" method doesn't just return "Hello, NAME" but rather
+    something longer than that.
+
+(2) Take our existing ShoppingCart class.  Create a subclass called
+    OnlineShoppingCart.  In this case, the "total" method will add
+    another $10 + 5% of the total for shipping costs.
+
+(3) Take our existing Bowl class (for ice cream), and create a
+    subclass called BigBowl.  A BigBowl is just like a Bowl, except
+    that it has a maximum of 5 scoops, not 3.
+
